@@ -36,6 +36,44 @@ class Kvadr extends Obdelnik{
   }
 }
 
+class person{
+    private $firstname;
+    private $surname;
+    private $age;
+
+    public function __construct($fn,$sn,$ag){
+        $this->firstname = $fn;
+        $this->surname = $sn;
+        $this->age = $ag;
+    }
+
+    public function getFirstname(){
+        return $this->firstname;
+    }
+    public function getSurname(){
+        return $this->surname;
+    }
+    public function getAge(){
+        return $this->age;
+    }
+
+    public function setFirstname($fn){
+        $this->firstname = $fn;
+    }
+
+    public function setSurname($sn){
+        $this->firstname = $sn;
+    }
+
+    public function setAge($ag){
+        if ($ag>0) $this->age = $ag;
+    }
+
+    public function getInfoPerson(){
+        echo $this->firstname." ".$this->surname." ".$this->age;
+    }
+}
+
 $obdelnik1 = new Obdelnik(4,4);
 echo $obdelnik1->uhlopricka();
  ?>
