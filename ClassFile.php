@@ -1,8 +1,8 @@
 <?php
-class Obdelnik{
+class Rectangle{
 
-  private $stranaA;
-  private $stranaB;
+  private $sideA;
+  private $sideB;
 
   public function __construct($a,$b){
       // TODO: code
@@ -12,12 +12,12 @@ class Obdelnik{
 
   // TODO: settry
 
-  public function uhlopricka(){
+  public function diagonal(){
       // TODO: code
     }
 }
 
-class Kvadr extends Obdelnik{
+class Block extends Obdelnik{
 
   private $stranaC;
 
@@ -27,12 +27,12 @@ class Kvadr extends Obdelnik{
 
   public function __construct($a,$b,$c){
     parent::__construct($a,$b);
-      $this->stranaC;
+      // todo
     }
 
-  public function uhlopricka(){
+  public function diagonal(){
     $uhloprickaStrana = parent::uhlopricka();
-    return sqrt($uhloprickaStrana*$uhloprickaStrana+$this->stranaC*$this->stranaC);
+    //todo
   }
 }
 
@@ -74,6 +74,13 @@ class person{
     }
 }
 
+// todo class employee extends Person
+
 $obdelnik1 = new Obdelnik(4,4);
 echo $obdelnik1->uhlopricka();
+
+//todo create object Block from class Kvadr
+//todo use method diagonal from object Kvadr1 
+//todo create object employee1 from class Employee
+//todo use your methods from object emp1oyee
  ?>
