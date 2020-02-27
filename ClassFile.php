@@ -79,8 +79,8 @@ class person{
 $obdelnik1 = new Obdelnik(4,4);
 echo $obdelnik1->uhlopricka();
 
-//todo create object Block from class Kvadr
+//todo create object Kvadr1 from class Block
 //todo use method diagonal from object Kvadr1 
 //todo create object employee1 from class Employee
-//todo use your methods from object emp1oyee
+//todo use your methods from object employee
  ?>
