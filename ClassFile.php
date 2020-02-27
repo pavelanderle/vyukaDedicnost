@@ -17,9 +17,9 @@ class Rectangle{
     }
 }
 
-class Block extends Obdelnik{
+class Block extends Rectangle{
 
-  private $stranaC;
+  private $sideC;
 
   // TODO: gettry
 
@@ -31,7 +31,7 @@ class Block extends Obdelnik{
     }
 
   public function diagonal(){
-    $uhloprickaStrana = parent::uhlopricka();
+    $diagonalSide = parent::diagonal();
     //todo
   }
 }
